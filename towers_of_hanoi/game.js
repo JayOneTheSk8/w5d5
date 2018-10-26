@@ -27,8 +27,6 @@ Game.prototype.promptMove = function(callback) {
 };
 
 Game.prototype.isValidMove = function(startTowerIdx, endTowerIdx) {
-  let startTowerIdx = parseInt(startTowerIdx);
-  let endTowerIdx = parseInt(endTowerIdx);
   // if (startTowerIdx === endTowerIdx) { return false; } // if you are trying to move to the same tower
   if (this.towers[startTowerIdx].length === 0) { return false; } // if you are moving from an empty tower
   if (this.towers[endTowerIdx].length === 0) { return true; } // if the tower you're moving to is empty
