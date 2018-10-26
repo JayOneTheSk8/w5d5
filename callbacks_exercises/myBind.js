@@ -1,4 +1,11 @@
 Function.prototype.myBind = function(context) {
+  // ES5 Version
+  // const that = this;
+  // return function () {
+  //   that.apply(context);
+  // };
+
+  // ES6
   return () => {
     this.apply(context);
   };
